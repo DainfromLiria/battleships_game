@@ -1,0 +1,15 @@
+image: python:3.11-slim
+
+stages:     
+  - test
+
+unit-tests:  
+  stage: test  
+  script:
+    - cd app
+    - echo "Running unit tests..."
+    - pytest tests.py
+
+########################################################################
+before_script:
+  - pip install -r requirements.txt
