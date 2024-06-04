@@ -1,6 +1,13 @@
 [![battleships_tests](https://github.com/DainfromLiria/battleships_game/actions/workflows/python-package.yml/badge.svg)](https://github.com/DainfromLiria/battleships_game/actions/workflows/python-package.yml)
 # Battleships
 
+### About
+This is a multiplayer 2D game for two players developed in Python using the `pygame` library. The game represents the classic tabletop game Battleships with default rules. More information can be found on the [wiki](https://en.wikipedia.org/wiki/Battleship_(game)).
+
+This game is my university semester project for the BI-PYT subject in the academic year 2023/2024.
+
+
+
 ### How run this game
 * Install all library's and packages
 
