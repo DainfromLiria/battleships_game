@@ -1,15 +1,33 @@
-image: python:3.11-slim
+name: battleships_tests
 
-stages:     
-  - test
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
-unit-tests:  
-  stage: test  
-  script:
-    - cd app
-    - echo "Running unit tests..."
-    - pytest tests.py
+jobs:
+  test:
+    runs-on: ubuntu-latest
 
-########################################################################
-before_script:
-  - pip install -r requirements.txt
+    strategy:
+      matrix:
+        python-version: [3.11]
+
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: |
+          cd app
+          echo "Running unit tests..."
+          pytest tests.py
+
