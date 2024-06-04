@@ -6,7 +6,7 @@ This is a multiplayer 2D game for two players developed in Python using the `pyg
 
 This game is my university semester project for the BI-PYT subject in the academic year 2023/2024.
 
-
+![Example](img/example.gif)
 
 ### How run this game
 * Install all library's and packages
