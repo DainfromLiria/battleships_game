@@ -1,4 +1,4 @@
-[![battleships_tests](https://github.com/DainfromLiria/battleships_game/actions/workflows/python-package.yml/badge.svg)](https://github.com/DainfromLiria/battleships_game/actions/workflows/python-package.yml)
+[![tests](https://github.com/DainfromLiria/battleships_game/actions/workflows/python-package.yml/badge.svg)](https://github.com/DainfromLiria/battleships_game/actions/workflows/python-package.yml)
 # Battleships
 
 ### About
